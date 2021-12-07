@@ -76,6 +76,7 @@ function paginatedResults(model){
        {
         results.results = await model.find().limit(limit).skip(startIndex).exec()
         res.paginatedResults = results
+        console.log()
         next()
        }catch(e)
        {
